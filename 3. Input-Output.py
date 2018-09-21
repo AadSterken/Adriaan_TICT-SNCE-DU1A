@@ -4,4 +4,4 @@ uurloon = float(input('Wat verdien je per uur: '))
 
 verdiend = round((uren * uurloon), 2)
 
-print('Je hebt ' + str(uren) + ' niet gewerkt en ' + str(verdiend) + ' verdiend')
+print('Je hebt ' + str(uren) + ' gewerkt en ' + str(verdiend) + ' verdiend')

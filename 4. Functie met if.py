@@ -10,15 +10,14 @@ def new_password(n = new, o = old):
     if n != o:
         if len(n) > 5:
             for l in range(len(n)):
-                if x < 1:
-                    s = n[l]
-                    if s.isdigit() == a:
-                        print(a)
-                        exit()
-                    else:
-                        l + 1
+                s = n[l]
+                if s.isdigit() == a:
+                    print(a)
+                    exit()
                 else:
-                    return
+                    l + 1
+            else:
+                return
         else:
             print(b)
     else:

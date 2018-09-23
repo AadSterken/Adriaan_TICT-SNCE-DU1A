@@ -2,7 +2,6 @@ o = (input('Enter your old password: '))
 n = (input('Enter a new password: '))
 a = True
 b = False
-x = 0
 
 
 def new_password(n, o):
@@ -17,7 +16,7 @@ def new_password(n, o):
                 else:
                     l + 1
             else:
-                return
+                print(b)
         else:
             print(b)
     else:

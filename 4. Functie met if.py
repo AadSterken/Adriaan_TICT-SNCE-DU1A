@@ -1,5 +1,5 @@
-o = (input('Enter your old password: '))
-n = (input('Enter a new password: '))
+old = (input('Enter your old password: '))
+new = (input('Enter a new password: '))
 a = True
 b = False
 
@@ -23,4 +23,4 @@ def new_password(n, o):
         print(b)
 
 
-new_password(n, o)
+new_password(new, old)

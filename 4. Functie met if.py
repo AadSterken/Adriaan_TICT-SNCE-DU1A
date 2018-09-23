@@ -1,11 +1,11 @@
-old = (input('Enter your old password: '))
-new = (input('Enter a new password: '))
+o = (input('Enter your old password: '))
+n = (input('Enter a new password: '))
 a = True
 b = False
 x = 0
 
 
-def new_password(n = new, o = old):
+def new_password(n, o):
     l=0
     if n != o:
         if len(n) > 5:
@@ -24,4 +24,4 @@ def new_password(n = new, o = old):
         print(b)
 
 
-new_password(new, old)
+new_password(n, o)

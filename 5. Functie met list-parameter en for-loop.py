@@ -1,7 +1,8 @@
 grondgetallen = [3, 9, -5, 2, -5]
-som = 0
 
-def kwadratensom(g, s):
+
+def kwadratensom(g):
+    s = 0
     for i in range(len(g)):
         if g[i] > 0:
             k = g[i]**2
@@ -9,4 +10,4 @@ def kwadratensom(g, s):
             i = i + 1
     print(s)
 
-kwadratensom(grondgetallen, som)
+kwadratensom(grondgetallen)

@@ -3,10 +3,8 @@ totaal = 0
 
 
 def som(g, a):
-    s=a
     for t in range(g[0], g[len(g)-1]):
-        while t < len(g):
-            s = s + g[t-1]
+        s = s + g[t-1]
 
 
 som(getallenlijst, totaal)

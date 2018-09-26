@@ -2,9 +2,10 @@ lijst = ['a', 'b', 'c']
 print(lijst)
 
 def wijzig(l):
-    l[0] = 'd'
-    l[1] = 'e'
-    l[2] = 'f'
+    l.clear()
+    l.append('d')
+    l.append('e')
+    l.append('f')
 
 wijzig(lijst)
 print(lijst)

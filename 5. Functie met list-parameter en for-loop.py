@@ -5,8 +5,7 @@ def kwadratensom(g):
     s = 0
     for i in g:
         if i > 0:
-            k = i**2
-            s = s + k
+            s += (i**2)
     print(s)
 
 kwadratensom(grondgetallen)

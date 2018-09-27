@@ -1,5 +1,4 @@
 afstandKM = int(input('Afstand in KM: '))
-prijs = float(0)
 leeftijd = int(input('Leeftijd in jaren: '))
 weekeind_Invoer = input('Is het weekeind? ')
 
@@ -9,32 +8,31 @@ else:
     weekeind = False
 
 
-def ritprijs(leeftijd, weekeind, afstandKM):
-    afstandKM = standaardprijs(afstandKM)
-    if (leeftijd < 12) or (leeftijd > 64):
-        if weekeind == True:
-            afstandKM = afstandKM * 0.65
+def ritprijs(l, w, a):
+    a = standaardprijs(a)
+    if (l < 12) or (l > 64):
+        if w == True:
+            a = a * 0.65
         else:
-            afstandKM = afstandKM * 0.70
-        return round(afstandKM, 2)
+            a = a * 0.70
+        return round(a, 2)
     else:
-        if weekeind == True:
-            afstandKM = afstandKM * 0.60
-            return afstandKM
+        if w == True:
+            a = a * 0.60
+            return round(a, 2)
         else:
-            return round(afstandKM, 2)
+            return round(a, 2)
 
 
-def standaardprijs(afstandKM):
-    if afstandKM < 0:
-        afstandKM = 0
-
-    if afstandKM < 50:
-        afstandKM = 0.80 * afstandKM
+def standaardprijs(a):
+    if a < 0:
+        a = 0
+    if a < 50:
+        a = 0.80 * a
     else:
-        afstandKM = afstandKM * 0.60 + 15
-    return afstandKM
+        a = a * 0.60 + 15
+    return round(a, 2)
 
-print(ritprijs(leeftijd, weekeind, afstandKM))
+print('Deze rit kost €' + str(ritprijs(leeftijd, weekeind, afstandKM)))
 
 

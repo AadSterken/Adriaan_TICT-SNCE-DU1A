@@ -16,5 +16,4 @@ def seizoen(maandnummer):
     else:
         print('winter')
 
-
 seizoen(maandnummer)

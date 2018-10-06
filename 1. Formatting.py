@@ -1,13 +1,16 @@
-celsius = 25
+celsius = 0
+print('{0:^6}{1:^6}'.format(" F", " C"))
 
 def convert(celsius):
-    Fahrenheit = celsius * 1.8 + 32
-    return Fahrenheit
+    fahrenheit = celsius * 1.8 + 32
+    return fahrenheit
 
 
 def table(celsius):
-    celsius = convert(celsius)
+    fahrenheit = convert(celsius)
+    for celsius in range(-30, 50, 10):
+        print('{0:6} {1:6}'.format(convert(celsius), fahrenheit))
 
 
 
-convert(celsius)
+table(celsius)

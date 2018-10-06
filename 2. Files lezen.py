@@ -1,6 +1,6 @@
 
-file = open(r"C:\Users\Home\PycharmProjects\Adriaan_TICT-SNCE-DU1A\kaartnummers.txt")
-largest = max(open(r"C:\Users\Home\PycharmProjects\Adriaan_TICT-SNCE-DU1A\kaartnummers.txt"))
+file = open(r"C:\Users\Adriaan HU\PycharmProjects\Adriaan_TICT-SNCE-DU1A\kaartnummers.txt")
+largest = max(open(r"C:\Users\Adriaan HU\PycharmProjects\Adriaan_TICT-SNCE-DU1A\kaartnummers.txt"))
 
 
 def kaartnummers(file):

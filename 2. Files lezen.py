@@ -8,7 +8,7 @@ def kaartnummers(file):
         split = line.split(",")
         naam = split[0].rstrip()
         nummers = split[1].rstrip()
-        print('{0:^8}{1:^2}'.format(nummers + 'heeft kaartnummer: ', naam))
+        print('{0:^8}{1:^2}'.format(nummers + ' heeft kaartnummer: ', naam))
 
 
 

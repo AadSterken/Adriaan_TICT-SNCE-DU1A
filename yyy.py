@@ -35,41 +35,19 @@
 # 	print("JaaaaabbbbbbaaaadaaaaabbbbaaaDDDDDoooooo")
 # 	if input("nog een rondje").upper() != 'J':
 # 		break
-# regel=0
-# while regel<3:
-# 	print('regel '+str(regel), end=': ')
-# 	for index in range(0, 3):
-# 		if regel==1:
-# 			break
-# 			print('$', end=", ")
-# 		elif index==0:
-# 			pass
-# 			print('@', end=", ")
-# 		elif index==1:
-# 			continue
-# 			print("#", end=', ')
-# 		print(str(index), end=', ')
-# 	regel+=1
-# 	print(end='\n')
-import random
-
-r = 5
-c = 5
-
-
-def game(r, c):
-	tabel = (r * c) * []
-	br = random.randrange(0, r)
-	bc = random.randrange(0, c)
-	bom = [br, bc]
-	for pogingen in (r * c):
-		gokregel = input('Geef coordinaten regel: ')
-		gokkolom = input('Geef coordinaten kolom: ')
-		gokcoord = [gokregel, gokkolom]
-		pogingen += 1
-		if bom == gokcoord:
-			print('boem')
-
-
-
-game(r, c)
+regel=0
+while regel<3:
+	print('regel '+str(regel), end=': ')
+	for index in range(0, 3):
+		if regel==1:
+			break
+			print('$', end=", ")
+		elif index==0:
+			pass
+			print('@', end=", ")
+		elif index==1:
+			continue
+			print("#", end=', ')
+		print(str(index), end=', ')
+	regel+=1
+	print(end='\n')

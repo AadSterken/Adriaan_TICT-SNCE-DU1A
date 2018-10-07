@@ -23,7 +23,7 @@ def gemiddelde_van_alle_studenten(studentencijfers):
         totaal = totaal + gemiddelde
         aantalCijfers += 1
     antw = totaal / aantalCijfers
-    return antw
+    return round(antw)
 
 print(gemiddelde_per_student(studentencijfers))
 print(gemiddelde_van_alle_studenten(studentencijfers))

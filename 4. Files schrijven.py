@@ -40,7 +40,5 @@ while True:
     invoer = invoer()
     datum = datum()
     bestand(file, invoer, datum)
-    # else:
-    #     break
 
 

@@ -16,12 +16,13 @@ def kluisreg():
         invoer = int(input('Voer het gewenste nummer in: '))
 
         kluizen = open(r"C:\Users\Adriaan HU\PycharmProjects\Adriaan_TICT-SNCE-DU1A\kluizen.txt", 'w')
+        regels = kluizen.readlines()
 
         # for line in kluizen.readlines():
         #     regels += 1
 
         if invoer == 1:
-            print('Er zijn nog ' + str(regels) + ' beschikbaar')
+            print('Er zijn nog ' + str(10 - regels) + ' beschikbaar')
         elif invoer == 2:
             kluisnummer = input('voer uw kluisnummer in: ')
             code = input('voer uw code in: ')

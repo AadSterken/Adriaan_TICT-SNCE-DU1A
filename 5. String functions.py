@@ -1,6 +1,7 @@
-invoer = input('type een zin: \n')
+
 
 def gemiddelde(invoer):
+    invoer = input('type een zin: \n')
     invoer = invoer.split(' ')
     totaal = 0
     teller = 0

@@ -33,6 +33,7 @@ while True:
             tijd = invoer[0]
             file.writelines('{0:8} {1:8} {2:8}'.format(datum, tijd, naam) + '\n')
         else:
+            close(file)
             exit()
 
     invoer = invoer()

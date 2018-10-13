@@ -10,11 +10,10 @@ cijferlijst = {'Adriaan' : '9',
 
 def negenplus(cijferlijst):
     regel = {}
-    for cijfer in cijferlijst.values():
-        if int(cijfer) >= 9:
-            print(cijferlijst)
-            regel[str(cijfer)] += cijferlijst[(cijfer)]
-        return print(regel)
+    for item in cijferlijst.items():
+        if int(item[1]) >= 9:
+           regel[item[0]] = item[1]
+    return print(regel)
 
 
 negenplus(cijferlijst)

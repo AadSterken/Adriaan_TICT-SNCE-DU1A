@@ -1,5 +1,4 @@
 
-
 def gemiddelde():
     invoer = input('Type een zin:\n')
     invoer = invoer.split(' ')

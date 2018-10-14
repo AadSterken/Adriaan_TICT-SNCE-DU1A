@@ -13,7 +13,7 @@ def cond():
         invoer = int(input('Geef een getal dat niet 0 is'))
 
 
-    return print('Er zijn ' + str(aantal) + ' cijfers ingevoerd. \n Het totaal is ' + str(totaal))
+    print('Er zijn ' + str(aantal) + ' cijfers ingevoerd.\n Het totaal is ' + str(totaal))
 
 
 cond()

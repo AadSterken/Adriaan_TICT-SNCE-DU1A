@@ -1,6 +1,6 @@
 stations = ['Schagen', 'Heerhugowaard', 'Alkmaar', 'Castricum', 'Zaandam',
             'Amsterdam Sloterdijk', 'Amsterdam Centraal', 'Amsterdam Amstel',
-            'Utrecht Centraal', '’s-Hertogenbosch', 'Eindhoven', 'Weert', 'Roermond', 'Sittard', 'Maastrich']
+            'Utrecht Centraal', '’s-Hertogenbosch', 'Eindhoven', 'Weert', 'Roermond', 'Sittard', 'Maastricht']
 
 def inlezen_beginstation(stations):
     while True:
@@ -49,7 +49,7 @@ def omroepen_reis(stations, beginstation, eindstation):
     print('Jij stapt in de trein in: ' + beginstation)
     for stops in stations:
         teller += 1
-        if (teller > index) and (teller < index1):
+        if (teller > index+1) and (teller < index1+1):
             print(' - ' + stops.rstrip())
     print('Jij stapt uit in: ' + eindstation)
 
